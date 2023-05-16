@@ -23,8 +23,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Calendar",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Calendar-1.0.0-beta+20230515174624.xcframework.zip",
-			checksum: "adf0adb3f5023dafae37941cc91b9a1019dc37a6d181fff12bc0c9b40d2a59fa"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Calendar-1.0.0-beta+20230516174834.xcframework.zip",
+			checksum: "4e536f1e0846af2c2d0622db0ed659471e0cf00455b63e7ca665e9bf2af8e1c9"
 		)
 	]
 )
