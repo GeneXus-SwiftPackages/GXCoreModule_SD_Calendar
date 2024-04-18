@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXCoreModule_SD_CalendarWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.0.0-beta.7")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.0.0-beta.16")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_CalendarWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Calendar",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Calendar-2.0.0-beta.7.xcframework.zip",
-			checksum: "0ead9dbdb1b2d997c3f8a6529775c0b40a7454bdcef87147fed36f9053c545e7"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Calendar-2.0.0-beta.16.xcframework.zip",
+			checksum: "1cb21159f59688f13bcfc9fa8517507bd5aaa4db137713f4328f7b5d64303597"
 		)
 	]
 )
