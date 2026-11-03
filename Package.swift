@@ -1,30 +1,28 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
 	name: "GXCoreModule_SD_Calendar",
-	platforms: [.iOS("12.0")],
+	platforms: [.iOS("15.0"), .visionOS("2.0")],
 	products: [
 		.library(
 			name: "GXCoreModule_SD_Calendar",
 			targets: ["GXCoreModule_SD_CalendarWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreBL.git", exact: "1.1.0"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.1.0")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "5.1.0-rc.14")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_CalendarWrapper",
 				dependencies: [
 					"GXCoreModule_SD_Calendar",
-					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.iOS])),
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .visionOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Calendar",
-			url: "https://pkgs.genexus.dev/iOS/releases/GXCoreModule_SD_Calendar-1.1.0.xcframework.zip",
-			checksum: "cfe9fb4cf7a24a96b0dc93152ce820b2a178bfadd431ec3d777c18bec21fdf69"
+			url: "https://pkgs.genexus.dev/iOS/preview/GXCoreModule_SD_Calendar-5.1.0-rc.14.xcframework.zip",
+			checksum: "dbdf96a6b0cf10127befe904df4bb5b00cd22152f0b638cd630572e26f1f1f5f"
 		)
 	]
 )
